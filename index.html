@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#f4f3ef" />
-  <title>JARVIS — меньше рутины, больше тебя</title>
+  <title>KIVO AI — меньше рутины, больше тебя</title>
   <style>
     :root {
       --paper: #f4f3ef;
@@ -166,8 +166,7 @@
     body { background:var(--paper); color:var(--ink); }
     body::before { opacity:.045; mix-blend-mode:screen; }
     .nav { border-color:var(--line); }
-    .brand-mark, .brand-mark::before { border-color:var(--ink); }
-    .brand-mark::after { background:var(--ink); }
+    .brand-logo { width:25px; height:25px; display:block; }
     .nav-links, .nav-note, .text-link, .hero-sub, .section-top p, .split-copy p, .proof-inner, .micro-note, .closing p { color:var(--muted); }
     .nav-links a:hover, .text-link:hover { color:var(--ink); }
     .outline-btn { color:var(--ink); border-color:rgba(243,243,238,.48); }
@@ -240,7 +239,7 @@
 <body>
   <div class="progress" id="progress"></div><div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
   <nav class="nav wrap" aria-label="Главная навигация">
-    <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true"></span>JARVIS</a>
+    <a href="#top" class="brand"><svg class="brand-logo" viewBox="0 0 240 240" aria-hidden="true"><style>.brand-arrow{transform-box:fill-box;transform-origin:center;animation:brand-arrow-move 2.3s cubic-bezier(.2,.75,.2,1) infinite}@keyframes brand-arrow-move{0%,100%{transform:translate(0,0);opacity:.88}50%{transform:translate(7px,6px);opacity:1}}@media (prefers-reduced-motion:reduce){.brand-arrow{animation:none}}</style><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M55 35V205M55 120L176 35M55 120L176 205" stroke-width="20"/></g><g class="brand-arrow" stroke="var(--acid)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M116 151L190 211"/><path d="M190 211L187 181M190 211L160 208"/></g></svg>KIVO AI</a>
     <div class="nav-links"><a href="#why">Что умеет</a><a href="#scenarios">Идеи</a><a href="#demo">Попробовать</a></div>
     <div class="nav-action"><span class="nav-note">Всегда на связи</span><button class="outline-btn" data-open-modal>Попробовать</button></div>
   </nav>
@@ -251,14 +250,14 @@
         <div class="reveal">
           <div class="eyebrow">личный помощник</div>
           <h1>Твои дела.<br><em class="swap-line" id="swapLine">Без лишнего.</em></h1>
-          <p class="hero-sub">JARVIS помогает искать, планировать и делать. Ты пишешь как обычно — он помогает дальше.</p>
+          <p class="hero-sub">KIVO AI помогает искать, планировать и делать. Ты пишешь как обычно — он помогает дальше.</p>
           <div class="hero-actions"><button class="fill-btn" data-open-modal>Попробовать ↗</button><a class="text-link" href="#why">Посмотреть, как он помогает</a></div>
           <div class="micro-note">Просто напиши, что нужно.</div>
         </div>
         <div class="hero-visual reveal">
-          <div class="orb-shell"><canvas id="topo" aria-hidden="true"></canvas><div class="orb-glow"></div><div class="orb-center"><div class="orb-word">JAR<span>VIS</span></div></div></div>
+          <div class="orb-shell"><canvas id="topo" aria-hidden="true"></canvas><div class="orb-glow"></div><div class="orb-center"><div class="orb-word">KI<span>VO</span></div></div></div>
           <div class="floating-card card-one"><small>на сегодня</small><strong>План собран ✓</strong></div>
-          <div class="floating-card card-two"><small>JARVIS рядом</small><strong>С чем помочь?</strong></div>
+          <div class="floating-card card-two"><small>KIVO рядом</small><strong>С чем помочь?</strong></div>
         </div>
       </div>
     </section>
@@ -266,7 +265,7 @@
     <div class="proof-strip"><div class="wrap proof-inner"><b>Скажи, что нужно — дальше разберёмся.</b><span class="proof-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>Помогает с делами, идеями и планами.</span></div></div>
 
     <section class="section wrap" id="scenarios">
-      <div class="section-top reveal"><div><span class="pill">Идеи</span><h2>Скинь с себя<br>пару вещей.</h2></div><p>Выбери то, что сейчас занимает голову. JARVIS покажет, с чего начать.</p></div>
+      <div class="section-top reveal"><div><span class="pill">Идеи</span><h2>Скинь с себя<br>пару вещей.</h2></div><p>Выбери то, что сейчас занимает голову. KIVO AI покажет, с чего начать.</p></div>
       <div class="scenario-grid">
         <button class="scenario-card reveal" data-prompt="Разбери мою почту и выдели главное"><small>сегодня</small><strong>Разобрать почту</strong><span>↗</span></button>
         <button class="scenario-card reveal" data-prompt="Помоги подготовиться к встрече"><small>через час</small><strong>Подготовить встречу</strong><span>↗</span></button>
@@ -276,7 +275,7 @@
     </section>
 
     <section class="section wrap" id="why">
-      <div class="section-top reveal"><div><span class="pill">Каждый день</span><h2>Не умнее.<br>Просто полезнее.</h2></div><p>Не надо учиться. Пиши как привык — JARVIS подхватит.</p></div>
+      <div class="section-top reveal"><div><span class="pill">Каждый день</span><h2>Не умнее.<br>Просто полезнее.</h2></div><p>Не надо учиться. Пиши как привык — KIVO AI подхватит.</p></div>
       <div class="cards">
         <article class="feature-card reveal"><span class="feature-no">01</span><h3>Разобрать<br>хаос</h3><p>Соберёт мысли и задачи в понятный план.</p><div class="feature-visual" aria-hidden="true"></div></article>
         <article class="feature-card reveal"><span class="feature-no">02</span><h3>Сделать<br>вместе</h3><p>Поможет написать, найти, сравнить и не забыть.</p><div class="feature-visual" aria-hidden="true"></div></article>
@@ -287,10 +286,10 @@
     <section class="section wrap demo-section" id="demo">
       <div class="section-top reveal"><div><span class="pill">Попробуй сам</span><h2>Напиши как обычно.<br>Он поймёт.</h2></div><p>Это маленькая демо-версия. Выбери пример или напиши свой.</p></div>
       <div class="demo-shell reveal">
-        <div class="demo-top"><b>JARVIS</b><span class="demo-status">готов помочь</span></div>
+        <div class="demo-top"><b>KIVO AI</b><span class="demo-status">готов помочь</span></div>
         <div class="demo-body">
           <div class="demo-prompts"><button class="prompt-chip" data-prompt="Помоги спланировать мой день">Спланировать день</button><button class="prompt-chip" data-prompt="Подготовь меня к встрече">Подготовиться к встрече</button><button class="prompt-chip" data-prompt="Разбери мои задачи">Разобрать задачи</button></div>
-          <div class="demo-input-row"><input class="demo-input" id="demoInput" value="Помоги мне спланировать день" aria-label="Сообщение JARVIS"><button class="demo-send" id="demoSend">Спросить ↗</button></div>
+          <div class="demo-input-row"><input class="demo-input" id="demoInput" value="Помоги мне спланировать день" aria-label="Сообщение KIVO AI"><button class="demo-send" id="demoSend">Спросить ↗</button></div>
           <div class="demo-output" id="demoOutput"><span>Нажми «Спросить» — покажу, как это может выглядеть.</span></div>
         </div>
       </div>
@@ -298,8 +297,8 @@
 
     <section class="section wrap" id="how">
       <div class="split">
-        <div class="split-copy reveal"><span class="pill">Вот как это бывает</span><h2>Сказал —<br>он помог.</h2><p>Не нужно знать особых слов. Можно просто сказать: «Помоги мне подготовиться к завтрашнему дню».</p><ol class="step-list"><li><b>01</b><span>Ты говоришь, что нужно.</span></li><li><b>02</b><span>JARVIS уточняет детали.</span></li><li><b>03</b><span>Возвращается с готовым результатом.</span></li></ol></div>
-        <div class="reveal"><div class="chat-window"><div class="chat-head"><span>JARVIS</span><span class="chat-online">на связи</span></div><div class="bubble you">Помоги мне подготовиться к завтрашнему дню</div><div class="bubble">Конечно. Я посмотрю твои задачи, календарь и заметки. Хочешь, чтобы я собрал короткий план?</div><div class="bubble you">Да, и напомни мне о нём утром</div><div class="bubble typing"><i></i><i></i><i></i></div></div><div class="quote"><b>Никаких команд.</b> Просто нормальный разговор.</div></div>
+        <div class="split-copy reveal"><span class="pill">Вот как это бывает</span><h2>Сказал —<br>он помог.</h2><p>Не нужно знать особых слов. Можно просто сказать: «Помоги мне подготовиться к завтрашнему дню».</p><ol class="step-list"><li><b>01</b><span>Ты говоришь, что нужно.</span></li><li><b>02</b><span>KIVO AI уточняет детали.</span></li><li><b>03</b><span>Возвращается с готовым результатом.</span></li></ol></div>
+        <div class="reveal"><div class="chat-window"><div class="chat-head"><span>KIVO AI</span><span class="chat-online">на связи</span></div><div class="bubble you">Помоги мне подготовиться к завтрашнему дню</div><div class="bubble">Конечно. Я посмотрю твои задачи, календарь и заметки. Хочешь, чтобы я собрал короткий план?</div><div class="bubble you">Да, и напомни мне о нём утром</div><div class="bubble typing"><i></i><i></i><i></i></div></div><div class="quote"><b>Никаких команд.</b> Просто нормальный разговор.</div></div>
       </div>
     </section>
 
@@ -308,7 +307,7 @@
     <section class="closing wrap reveal"><span class="pill">Попробуем?</span><h2>Давай снимем<br>с тебя пару дел.</h2><p>Напиши первую задачу. Дальше разберёмся вместе.</p><button class="fill-btn" data-open-modal>Начать ↗</button></section>
   </main>
 
-  <footer class="wrap"><span>© 2026 JARVIS</span><span>Больше времени на себя.</span></footer>
+  <footer class="wrap"><span>© 2026 KIVO AI</span><span>Больше времени на себя.</span></footer>
 
   <div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal"><button class="close" aria-label="Закрыть" data-close-modal>×</button><h3 id="modal-title">Попробуем?</h3><p>Оставь email — напишем, когда можно будет попробовать.</p><form id="waitlist"><input type="email" aria-label="Email" placeholder="твой@email.com" required><button class="fill-btn" type="submit">Жду ↗</button></form></div></div>
 

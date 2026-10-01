@@ -1,0 +1,16 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">KIVO logo</title>
+  <desc id="desc">A K shaped mark with an animated neutral arrow</desc>
+  <style>
+    .kivo-arrow { transform-box: fill-box; transform-origin: center; animation: kivo-arrow-move 2.3s cubic-bezier(.2,.75,.2,1) infinite; }
+    @keyframes kivo-arrow-move { 0%,100% { transform: translate(0,0); opacity:.88; } 50% { transform: translate(7px,6px); opacity:1; } }
+    @media (prefers-reduced-motion: reduce) { .kivo-arrow { animation:none; } }
+  </style>
+  <g stroke="#F3F3EE" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M55 35V205M55 120L176 35M55 120L176 205" stroke-width="20"/>
+  </g>
+  <g class="kivo-arrow" stroke="#D6D6D0" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M116 151L190 211"/>
+    <path d="M190 211L187 181M190 211L160 208"/>
+  </g>
+</svg>
